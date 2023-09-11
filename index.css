@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+#main {
+  display: flex;
+
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://images.unsplash.com/photo-1618909705890-0f2f201b02d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGxpZ2h0aW5nJTIwYmFja2dyb3VuZCUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  background-size: cover;
+}
+
+#card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  height: 65vh;
+  width: 45%;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(15, 15, 15, 0.37);
+  backdrop-filter: blur(4px);
+  border-radius: 20px;
+}
+h1{
+    position: relative;
+    top:6%;
+    color:white;
+
+}
+
+.input1 {
+  margin-top: 32px;
+  height: 6vh;
+  width: 30vw;
+  border-top-right-radius: 10px;
+  border: none;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow:0px 0px 10px 2px rgb(233, 205, 153) ;
+ 
+  animation: box 1s linear infinite alternate-reverse;
+  outline-color:rgb(46, 233, 208) ;
+}
+
+
+#icon{
+    position: absolute;
+    top:70%;
+    left:77%;
+    color: gray;
+    transition: 1s;
+
+}
+#icon:hover{
+    cursor: pointer;
+    color:black;
+    transition: 1s;
+}
+
+small{
+    color:rgb(23, 24, 24)
+}
+
+button {
+  margin-top: 20px;
+  height: 5vh;
+  width: 8vw;
+  border: none;
+  border-radius: 10px;
+  position: relative;
+  background-color: #e27691;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+button::after{
+    content: '';
+    position: absolute;
+    height: 10%;
+    width:50%;
+    left:-50%;
+  border-radius: 10px;
+    top:45%;
+    background-color: aliceblue;
+    opacity: 0;
+}
+button:hover::after{
+    left:0%;
+    transition: 1s;
+    opacity: 1;
+}
+button::before{
+    content: '';
+    position: absolute;
+    height: 10%;
+    width:50%;
+    right:-50%;
+  border-radius: 10px;
+    top:45%;
+    background-color: aliceblue;
+    opacity: 0;
+}
+button:hover::before{
+    right:0%;
+    transition: 1s;
+    opacity: 1;
+}
+a{
+    color:red;
+    position: absolute;
+    bottom:10%;
+    right:5%;
+
+}
